@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="Visuals" content="width=device-width, intial-scale=1.0">
+        <title>
+            Abhiroops Weather App
+        </title>
+        <style>
+            
+                /* import Concert One font*/
+                @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');            
+                body {
+                font-family: 'Concert One', cursive;                
+                color: #f7feff;
+                margin: 0;
+                font-size: 30px;
+                padding: 0;
+                box-sizing: border-box;
+                 }
+                 /* Main div for sizing and background of app */
+                 .firstDiv{
+                    max-width: 500px;
+                    background-image: url("images/Background.jpeg");
+                    width: 90%;
+                    margin: 20px auto 0;
+                    border-radius: 20px;
+                    padding: 40px 50px;
+                    text-align: center;
+
+                 }
+                 /* Search area/row */
+                 .search{
+                    margin-top: 25px;
+                    margin-bottom: -50px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                 }
+                 /* user input/searchbox */
+                 .search input{
+                    border: 0;
+                    border-radius: 35px;
+                    outline: 0;
+                    padding: 9px 25px;
+                    height: 30px;
+                    flex: 1;
+                    font-size: 20px;
+                    margin-right: 20px; 
+                    background: #D0DDD7;
+                    color: #2E1F27;
+                 }
+                 /* Search button */
+                 .search button{
+                    border: 0;
+                    outline: 0;
+                    background: D0DDD7;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    width: 41px;
+                    height: 41px;
+                    align-items: center;
+                 }
+                 .search button img{
+                    align-items: center;
+                    width: 15px;
+                 }
+                 /* Current weather area */
+                 .weather img{
+                    align-items: center;
+                    width: 50%;
+                 }
+                 /* Weather Icon */
+                 .weatherIcon{
+                    align-items: center;
+                    max-width: 200px;
+                    margin-top: 100px;
+                 }
+                 /* Current temp */
+                 .weather h2{
+                    align-items: center;
+                    font-size: 55px;
+                    font-weight: 550;
+                    margin-top: 20px;
+                }
+                /* City name */
+                .weather h1{
+                    align-items: center;
+                    font-size: 35px;
+                    font-weight: 450;
+                    margin-top: -40px;
+                }
+                /* Buttom row */
+                .extras{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 20px;
+                    margin-top: 120px;
+                }
+                /* Humid and Wind Formatting */
+                .extrasSections{
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    
+                }
+                .extrasSections img{
+                    max-width: 60px;
+                    min-width: 60px;
+                    margin-right: 10px;
+                }
+                .Humidity, .Wind{
+                    font-size: 18px;
+                    margin-top: 15px;
+                }
+                .Humidity1, .Wind1{
+                    font-size: 18px;
+                    margin-top: -15px;
+                }
+                
+        </style>
+
+    </head>
+    <!-- Set background colour-->
+    <body style="background-color: #1f1f1f" >
+        <!-- main div that will contain everything-->
+        <div class="firstDiv">
+            <!-- Search bar-->
+            <div class="search">
+                <input class="input1" type="text" placeholder="Enter City Name"/>
+                <!-- Search icon/button-->
+                <button class="button1">
+                    <img src="images/Search.png" width="10" >
+                </button>
+            </div>
+            <!-- Div to contain all weather outputs-->
+            <div class="weather">
+                <img src="images/Drizzle.png" class="weatherIcon">
+                <h2 class="temps">12°c</h2>
+                <h1 class="location">Markham</h1>
+                <!-- Div to contain humid and wind-->
+                <div class="extras">
+                    <div class="extrasSections">
+                        <!-- Humidity -->
+                        <img src="images/Humidity.png">
+                        <div>
+                               <p class="Humidity">10%</p>
+                               <p class="Humidity1">Humidity</p>
+                                </div>
+                        </div>
+                        <!-- Wind Speed-->
+                        <div class="extrasSections">
+                            <img src="images/Wind.png">
+                            <div>
+                                <p class="Wind">5km/h</p>
+                                <p class="Wind1">Wind Speed</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Run JS code -->
+        <script src="Main.js"></script>
+
+    </body>
+
+</html>
