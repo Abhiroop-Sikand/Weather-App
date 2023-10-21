@@ -36,22 +36,22 @@ async function weatherChecker(location){
 
     //Change the icon based of current weather
     if(data.weather[0].main == "Clouds"){
-        icons.src = "images/Clouds.png";
+        icons.src = "Images/Clouds.png";
     }
     else if(data.weather[0].main == "Clear"){
-        icons.src = "images/Clear.png";
+        icons.src = "Images/Clear.png";
     }
     else if(data.weather[0].main == "Rain"){
-        icons.src = "images/Rain.png";
+        icons.src = "Images/Rain.png";
     }
     else if(data.weather[0].main == "Drizzle"){
-        icons.src = "images/Drizzle.png";
+        icons.src = "Images/Drizzle.png";
     }
     else if (data.weather[0].main == "Thunderstorm"){
-        icons.src = "images/Thunderstorm.png";
+        icons.src = "Images/Thunderstorm.png";
     }
     else {
-        icons.src = "images/Mist.png";
+        icons.src = "Images/Mist.png";
     }
 }
 
